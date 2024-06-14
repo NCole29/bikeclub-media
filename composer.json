@@ -1,0 +1,22 @@
+{
+    "name": "bikeclub/bikeclub-media",
+    "description": "Install image and file media types, configuration, and taxonomies.",
+    "keywords": ["recipe", "bikeclub", "media"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Nancy Cole",
+            "homepage": "https://bikeclubsites.com",
+            "role": "Maintainer"
+          }
+    ],
+    "require": {
+        "drupal/crop": "^2.0",
+        "drupal/entity_browser": "^2.0",
+	    "drupal/field_group": "^3.0",
+        "drupal/image_widget_crop": "^2.0",
+        "drupal/magnific_popup": "^2.0",
+        "drupal/views_slideshow": "^5.0"
+    }
+}

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies:
+name: 'File category'
+vid: file_category
+description: 'File category'
+weight: 0

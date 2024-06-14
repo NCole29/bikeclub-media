@@ -1,0 +1,66 @@
+name: 'Bike Club - Media'
+description: 'Install image and file media types, configuration, and taxonomies.'
+type: 'Site'
+install:
+  # Core modules
+  - field
+  - file
+  - media
+  - media_library
+  - path
+  - responsive_image
+  - views
+  # Contrib modules
+  - crop
+  - entity_browser
+  - field_group
+  - image_widget_crop
+  - magnific_popup  
+  - views_slideshow
+  - views_slideshow_cycle
+config:
+  import:
+    image_widget_crop: '*'
+  actions:
+    entity_form_display.media.image.default:
+      setComponent:
+        field_image_category:
+          type: options_select
+          weight: 1
+    entity_form_display.media.image.media_library:
+      setComponent:
+        field_image_category:
+          type: options_select
+          weight: 1
+    entity_form_display.media.document.default:
+      setComponent:
+        field_document_category:
+          type: options_select
+          weight: 1
+    entity_form_display.media.document.media_library:
+      setComponent:
+        field_document_category:
+          type: options_select
+          weight: 1
+    entity_view_display.media.image.default:
+      setComponent:
+        field_image_category:
+          hidden: true
+    entity_view_display.media.image.media_library:
+      setComponent:
+        field_image_category:
+          hidden: true
+    entity_view_display.media.document.default:
+      setComponent:
+        field_document_category:
+          hidden: true
+    entity_view_display.media.document.media_library:
+      setComponent:
+        field_document_category:
+          hidden: true
+    field.media.image.field_media_image:
+      setComponent:
+        description: 'After choosing a file, you are prompted for <strong>alternative text</strong> required by screen readers. Alternate text may also used as caption text under images, except when displayed as Banner Pictures.'
+        file_directory: 'images/[date:custom:Y]'
+        file_extensions: 'png gif jpg jpeg webp svg'
+        max_filesize: '2 MB'
