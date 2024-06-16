@@ -1,6 +1,6 @@
 langcode: en
 status: true
-dependencies:
+dependencies: { }
 name: 'Document category'
 vid: document_category
 description: 'Document category'

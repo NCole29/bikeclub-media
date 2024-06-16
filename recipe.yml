@@ -25,23 +25,43 @@ config:
     entity_form_display.media.image.default:
       setComponent:
         field_image_category:
-          type: options_select
-          weight: 1
+          type: entity_reference_autocomplete
+          weight: 2
+          region: content
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
     entity_form_display.media.image.media_library:
       setComponent:
         field_image_category:
-          type: options_select
-          weight: 1
+          type: entity_reference_autocomplete
+          weight: 2
+          region: content
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
     entity_form_display.media.document.default:
       setComponent:
         field_document_category:
-          type: options_select
-          weight: 1
+          type: entity_reference_autocomplete
+          weight: 2
+          region: content
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
     entity_form_display.media.document.media_library:
       setComponent:
         field_document_category:
-          type: options_select
-          weight: 1
+          type: entity_reference_autocomplete
+          weight: 2
+          region: content
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
     entity_view_display.media.image.default:
       setComponent:
         field_image_category:

@@ -52,7 +52,6 @@ display:
           items_per_page: 25
           offset: 0
           id: 0
-          total_pages: null
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
@@ -197,7 +196,7 @@ display:
           expose:
             operator_id: ''
             label: 'True'
-            description: null
+            description: ''
             use_operator: false
             operator: status_op
             identifier: status
