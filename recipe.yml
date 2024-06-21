@@ -20,67 +20,22 @@ install:
   - views_slideshow_cycle
 config:
   import:
+    file:
+      - views.view.files
+    media_library:
+      - core.entity_view_mode.media.media_library
+      - core.entity_form_mode.media.media_library
+      - image.style.media_library
+      - views.view.media_library
+    media:
+      - core.entity_view_mode.media.full
+      - system.action.media_delete_action
+      - system.action.media_publish_action
+      - system.action.media_save_action
+      - system.action.media_unpublish_action
+      - views.view.media
+    image:
+      - image.style.medium
+      - image.style.large
+      - image.style.thumbnail 
     image_widget_crop: '*'
-  actions:
-    entity_form_display.media.image.default:
-      setComponent:
-        field_image_category:
-          type: entity_reference_autocomplete
-          weight: 2
-          region: content
-          settings:
-            match_operator: CONTAINS
-            match_limit: 10
-            size: 60
-    entity_form_display.media.image.media_library:
-      setComponent:
-        field_image_category:
-          type: entity_reference_autocomplete
-          weight: 2
-          region: content
-          settings:
-            match_operator: CONTAINS
-            match_limit: 10
-            size: 60
-    entity_form_display.media.document.default:
-      setComponent:
-        field_document_category:
-          type: entity_reference_autocomplete
-          weight: 2
-          region: content
-          settings:
-            match_operator: CONTAINS
-            match_limit: 10
-            size: 60
-    entity_form_display.media.document.media_library:
-      setComponent:
-        field_document_category:
-          type: entity_reference_autocomplete
-          weight: 2
-          region: content
-          settings:
-            match_operator: CONTAINS
-            match_limit: 10
-            size: 60
-    entity_view_display.media.image.default:
-      setComponent:
-        field_image_category:
-          hidden: true
-    entity_view_display.media.image.media_library:
-      setComponent:
-        field_image_category:
-          hidden: true
-    entity_view_display.media.document.default:
-      setComponent:
-        field_document_category:
-          hidden: true
-    entity_view_display.media.document.media_library:
-      setComponent:
-        field_document_category:
-          hidden: true
-    field.media.image.field_media_image:
-      setComponent:
-        description: 'After choosing a file, you are prompted for <strong>alternative text</strong> required by screen readers. Alternate text may also used as caption text under images, except when displayed as Banner Pictures.'
-        file_directory: 'images/[date:custom:Y]'
-        file_extensions: 'png gif jpg jpeg webp svg'
-        max_filesize: '2 MB'
