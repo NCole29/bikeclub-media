@@ -15,7 +15,7 @@ Views slideshow cycle | Adds a Rotating slideshow mode to Views Slideshow.
 ## Image Styles and Usage
 
 Image style 	| Aspect ratio | How it's used  
-----------------|----------------------------------  
+----------------|--------------|-------------------  
 Banner			| 20:7	| Display one image (or a slideshow) as a page banner on the home page or above the page title on a Basic Page or Event.
 Gallery			| 3:2 	| Display a gallery of images on the home page or above the page title on a Basic Page or Event.
 Image, 4:3		| 4:3 	| Insert an image with aspect 4:3 in the text editor and select a size (S, M, or L).
