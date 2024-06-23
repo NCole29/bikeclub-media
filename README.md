@@ -23,13 +23,15 @@ Image, 16:9		| 16:9	| Insert an image with aspect 16:8 in the text editor and se
 
 <small>Note: The ride page image style is installed with the ride content types.</small>
 
-## Default Taxonomy Terms
+## Default Content
 
-The image_category and file_category taxonomies are populated with default terms.
+**Taxonomies**
 
-- Image categories: Announcement, Banner, Event, Recurring ride, Ride, Icon, People, Other
+Vocabulary	| Terms
+------------|----------------------------------  
+image_category | Announcement, Banner, Event, Recurring ride, Ride, Icon, People, Other
+file_category  | Admin files, Member files, Public files, Cue sheet
 
-- File categories: Admin files, Member files, Public files, Cue sheet
 
 When images are added to web pages, code in the club_media module automatically populates the image category with the name of the content type (Announcement, Banner, Event, Recurring ride, Ride).
 
