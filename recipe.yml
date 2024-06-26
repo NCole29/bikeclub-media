@@ -15,7 +15,8 @@ install:
   - entity_browser
   - field_group
   - image_widget_crop
-  - magnific_popup  
+  - magnific_popup 
+  - svg_image
   - views_slideshow
   - views_slideshow_cycle
 config:
