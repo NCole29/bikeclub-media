@@ -8,6 +8,7 @@ dependencies:
     - media.type.image_crop_16_9
   module:
     - image_widget_crop
+    - svg_image
 id: media.image_crop_16_9.default
 targetEntityType: media
 bundle: image_crop_16_9
