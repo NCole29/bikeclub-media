@@ -9,7 +9,6 @@ dependencies:
     - media.type.gallery
   module:
     - image_widget_crop
-    - svg_image
 id: media.gallery.media_library
 targetEntityType: media
 bundle: gallery
