@@ -1,5 +1,5 @@
 name: 'Bike Club - Media'
-description: 'Install image and file media types, configuration, and taxonomies.'
+description: 'Installs image and file media types, configuration, and taxonomies.'
 type: 'Site'
 install:
   # Core modules

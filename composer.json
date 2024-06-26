@@ -1,6 +1,6 @@
 {
     "name": "bikeclub/bikeclub-media",
-    "description": "Install image and file media types, configuration, and taxonomies.",
+    "description": "Installs image and file media types, configuration, and taxonomies.",
     "keywords": ["recipe", "bikeclub", "media"],
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
