@@ -10,4 +10,5 @@ effects:
     weight: 1
     data:
       width: 400
+      height: null
       upscale: false

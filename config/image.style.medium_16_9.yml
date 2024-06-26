@@ -14,12 +14,14 @@ effects:
     weight: 3
     data:
       crop_type: crop_16_9
+      automatic_crop_provider: null
   6e565aa8-dad9-4e69-9559-591b421f19f8:
     uuid: 6e565aa8-dad9-4e69-9559-591b421f19f8
     id: image_scale
     weight: 3
     data:
       width: 500
+      height: null
       upscale: false
   8a7e1800-87f8-4741-a3ac-610adc38a28e:
     uuid: 8a7e1800-87f8-4741-a3ac-610adc38a28e
